@@ -18,7 +18,7 @@ const Hero = () => {
             transition={{ delay: 0.2 }}
           >
             <span className="text-white">Hi, I'm </span>
-            <span className="neon-text animate-glow">NAGARAJ</span>
+            <span className="gradient-text">NAGARAJ</span>
           </motion.h1>
           
           <motion.p
@@ -49,7 +49,7 @@ const Hero = () => {
               href="#contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="glow-button"
+              className="primary-button"
             >
               Get In Touch
             </motion.a>
@@ -60,7 +60,7 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, rotate: 360 }}
-                className="p-3 rounded-full neon-border hover:bg-neon-blue/10 transition-all duration-300"
+                className="p-3 rounded-full formal-border hover:bg-primary/10 transition-all duration-300"
               >
                 <FaGithub size={24} />
               </motion.a>
@@ -70,7 +70,7 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, rotate: 360 }}
-                className="p-3 rounded-full neon-border hover:bg-neon-blue/10 transition-all duration-300"
+                className="p-3 rounded-full formal-border hover:bg-primary/10 transition-all duration-300"
               >
                 <FaLinkedin size={24} />
               </motion.a>

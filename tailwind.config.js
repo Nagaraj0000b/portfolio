@@ -6,13 +6,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'neon-blue': '#00f5ff',
-        'neon-purple': '#bf00ff',
-        'neon-pink': '#ff0080',
-        'neon-green': '#39ff14',
-        'dark-bg': '#0a0a0f',
-        'dark-card': '#1a1a2e',
-        'dark-border': '#16213e',
+        'primary': '#10a37f',
+        'primary-hover': '#0d8f6f',
+        'secondary': '#6366f1',
+        'accent': '#8b5cf6',
+        'dark-bg': '#0d1117',
+        'dark-card': '#161b22',
+        'dark-border': '#30363d',
+        'text-primary': '#ffffff',
+        'text-secondary': '#b3b3b3',
+        'text-muted': '#8e8ea0',
       },
       animation: {
         'glow': 'glow 2s ease-in-out infinite alternate',

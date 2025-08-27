@@ -11,11 +11,11 @@ const Footer = () => {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          <p className="text-gray-400 mb-4">
-            Built with ❤️ using React & Tailwind CSS
+          <p className="text-text-muted mb-4">
+            Built using React & Tailwind CSS
           </p>
-          <p className="text-gray-500 text-sm">
-            © 2024 Nagaraj. All rights reserved.
+          <p className="text-text-muted text-sm">
+            © 2025 Nagaraj. All rights reserved.
           </p>
         </motion.div>
       </div>

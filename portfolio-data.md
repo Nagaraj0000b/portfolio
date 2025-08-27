@@ -4,7 +4,7 @@
 - **Full Name**: NAGARAJ
 - **Title**: Software Developer
 - **Location**: San Francisco, CA
-- **Email**: nagarajbenchamatti@email.com
+- **Email**: nagarajbenchamatti@gmail.com
 - **Phone**: +91 9740842826
 - **Website**: https://nagaraj.github.io
 

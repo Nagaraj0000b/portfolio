@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center py-4">
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="text-2xl font-bold neon-text"
+            className="text-2xl font-bold gradient-text"
           >
             &lt;NAGARAJ/&gt;
           </motion.div>
@@ -38,10 +38,10 @@ const Navbar = () => {
                 href={`#${item.toLowerCase()}`}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                className="text-gray-300 hover:text-neon-blue transition-colors duration-300 relative group"
+                className="text-text-secondary hover:text-primary transition-colors duration-300 relative group"
               >
                 {item}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-neon-blue to-neon-purple transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </motion.a>
             ))}
           </div>

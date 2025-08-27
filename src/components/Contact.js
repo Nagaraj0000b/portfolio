@@ -24,8 +24,27 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
+    
+    const subject = encodeURIComponent('Contact from Portfolio');
+    const body = encodeURIComponent(
+      `Hi Nagaraj,\n\n` +
+      `Name: ${formData.name}\n` +
+      `Email: ${formData.email}\n\n` +
+      `Message:\n${formData.message}\n\n` +
+      `Best regards,\n${formData.name}`
+    );
+    
+    const mailtoLink = `mailto:nagarajbenchamatti@gmail.com?subject=${subject}&body=${body}`;
+    
+    // Try window.open first, then fallback to window.location
+    const opened = window.open(mailtoLink);
+    if (!opened) {
+      window.location.href = mailtoLink;
+    }
+    
+    setTimeout(() => {
+      alert('Email client should open with your message ready to send!');
+    }, 500);
   };
 
   return (
@@ -62,7 +81,7 @@ const Contact = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
                   <FaEnvelope className="text-neon-blue text-xl" />
-                  <span className="text-gray-300">nagarajbenchamatti@email.com</span>
+                  <span className="text-gray-300">nagarajbenchamatti@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <FaPhone className="text-neon-purple text-xl" />
